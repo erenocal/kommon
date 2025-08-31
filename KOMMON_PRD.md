@@ -1,116 +1,158 @@
-# 📋 Kommon WebApp - Product Requirement Document (PRD)
+# 🏠 Kommon - Student Housing Platform PRD
 
 ## 📋 Document Information
+
 **Document Version**: 1.0.0  
 **Last Updated**: December 2024  
 **Status**: 🟡 Planning Phase  
-**Document Owner**: Product Team  
+**Document Owner**: Eren Ocal  
 **Next Review**: Weekly  
+**Target Market**: NYC University Students  
+**Focus**: International & Out-of-State Students
 
 ---
 
 ## 🎯 Executive Summary
 
 ### **Product Vision**
-Kommon WebApp is a modern, enterprise-grade web application designed to provide a seamless user experience with professional UI components, robust functionality, and scalable architecture.
+
+Kommon is the definitive trusted housing partner for university communities - a closed-ecosystem marketplace where every user is verified, transforming safety from a feature into a fundamental promise. We help students build a foundation of safety and belonging in their new home.
 
 ### **Product Mission**
-To deliver a high-quality web application that demonstrates modern development practices, excellent user experience, and enterprise-ready features while maintaining simplicity and usability.
+
+To reduce housing-related stress and social isolation for students by providing a secure, university-verified platform that streamlines the search for rooms and compatible roommates. We help students create a new home in their new environment and alleviate acculturation stress, improving mental well-being.
 
 ### **Success Metrics**
-- **User Adoption**: 100% internal team adoption
-- **Performance**: <2 second load time, 60fps animations
-- **Quality**: 95+ accessibility score, comprehensive test coverage
-- **User Satisfaction**: 4.5+ rating from internal users
+
+- **User Growth**: 1,700 total activated users by end of first semester (4 months post-launch)
+- **Conversion**: 15% lease conversion rate (users who complete a rental transaction)
+- **Verification**: 95%+ university verification completion rate on first attempt
+- **User Satisfaction**: Reduce housing search time and stress by 50% vs. traditional platforms
+- **Trust**: Net Promoter Score (NPS) > 20
 
 ---
 
 ## 🎯 Product Requirements
 
-### **Core Functional Requirements**
-- [ ] **User Authentication**: Secure login/logout system
-- [ ] **Data Management**: CRUD operations for core entities
-- [ ] **Real-time Updates**: Live data synchronization
-- [ ] **Responsive Design**: Cross-device compatibility
-- [ ] **Accessibility**: WCAG 2.1 AA compliance
-- [ ] **Performance**: Fast loading and smooth interactions
+### **Core MVP Requirements (Phase 1)**
+
+- [ ] **University Email Verification**: Mandatory .edu email verification for all users
+- [ ] **Student Profile System**: Verified profiles with university, major, academic year
+- [ ] **Dual Listing System**: "I have a room" and "I need a room" profiles
+- [ ] **Lifestyle Compatibility**: Preferences for cleanliness, social habits, noise level
+- [ ] **Basic Search & Filter**: Budget, location, and lifestyle preference filtering
+- [ ] **Responsive Design**: Mobile-first design for student accessibility
+
+### **Trust & Safety Requirements**
+
+- [ ] **Closed Ecosystem**: Only verified university students can access
+- [ ] **Profile Verification**: University email verification with retry mechanism
+- [ ] **Privacy Protection**: Email addresses hidden from other users
+- [ ] **Verified Student Badges**: Clear trust indicators on all profiles
+- [ ] **Secure Data Handling**: Protection of student personal information
+- [ ] **Anti-Scam Protection**: University verification prevents fake accounts
 
 ### **User Experience Requirements**
-- [ ] **Modern UI**: Clean, professional interface design
-- [ ] **Intuitive Navigation**: Easy-to-use navigation system
-- [ ] **Consistent Design**: Unified design language throughout
-- [ ] **Mobile-First**: Optimized for mobile devices
-- [ ] **Fast Interactions**: Responsive user interactions
-- [ ] **Error Handling**: Clear error messages and recovery
+
+- [ ] **Streamlined Onboarding**: Simple 3-step profile creation process
+- [ ] **Intuitive Role Selection**: Clear "I have/need a room" flow
+- [ ] **Compatibility Matching**: Lifestyle preference-based filtering
+- [ ] **Mobile Optimization**: Designed for student mobile usage patterns
+- [ ] **Clear Trust Signals**: Prominent verification badges and university info
+- [ ] **Accessible Design**: WCAG 2.1 AA compliance for international students
 
 ### **Technical Requirements**
-- [ ] **Modern Stack**: React 18, Next.js 14, TypeScript
-- [ ] **Component Library**: shadcn/ui for enterprise-grade components
-- [ ] **Styling**: Tailwind CSS for consistent design
-- [ ] **State Management**: Efficient state management solution
-- [ ] **API Integration**: RESTful API with proper error handling
-- [ ] **Security**: Authentication, authorization, and data protection
+
+- [ ] **Modern Stack**: Next.js 14, React 18, TypeScript for scalability
+- [ ] **Email Verification**: Robust .edu email verification system
+- [ ] **Component Library**: shadcn/ui for consistent, professional UI
+- [ ] **Brand Integration**: Kommon visual identity (Hearth, Sage, Sunlight colors)
+- [ ] **Database**: Secure student data storage with privacy controls
+- [ ] **Performance**: <2 second load times for student mobile devices
 
 ---
 
 ## 🗺️ Product Roadmap
 
-### **Phase 1: Foundation (Q1 2025) - NOT STARTED 📋**
+### **Phase 1: MVP Launch (Q1 2025) - FOUNDATION**
+
 **Timeline**: January - March 2025  
-**Focus**: Core application structure and basic functionality
+**Focus**: University-verified marketplace with basic compatibility matching
+**Target**: Launch with 2-3 NYC universities
 
 #### **Deliverables**
-- [ ] Project setup and architecture
-- [ ] Basic UI components and layout
-- [ ] Core functionality implementation
-- [ ] Responsive design foundation
-- [ ] Basic testing framework
+
+- [ ] University email verification system
+- [ ] Student profile creation and management
+- [ ] Dual marketplace (room seekers + room offers)
+- [ ] Basic lifestyle compatibility matching
+- [ ] Mobile-responsive design with Kommon branding
+- [ ] Search and filtering functionality
 
 #### **Success Criteria**
-- Application runs without errors
-- Core features are functional
-- Responsive design works on all devices
-- Basic accessibility requirements met
 
-### **Phase 2: Enhancement (Q2 2025) - PLANNED 📋**
+- 95%+ university verification completion rate
+- 500+ activated users in first month
+- Functional room seeker and offer creation
+- Mobile-optimized experience
+- Basic compatibility filtering works
+- Zero security incidents with student data
+
+### **Phase 2: Community Growth (Q2 2025) - EXPANSION**
+
 **Timeline**: April - June 2025  
-**Focus**: Feature enhancement and user experience improvements
+**Focus**: Communication features and advanced matching
+**Target**: 1,700 total users, 15% lease conversion rate
 
 #### **Deliverables**
-- [ ] Advanced UI components
-- [ ] Enhanced user interactions
-- [ ] Performance optimizations
-- [ ] Comprehensive testing
-- [ ] Documentation updates
+
+- [ ] In-app messaging system for verified students
+- [ ] Enhanced profile verification with photo ID
+- [ ] Advanced compatibility algorithms
+- [ ] Interactive map-based search
+- [ ] International student guarantor service integration
+- [ ] Community guidelines and safety features
 
 #### **Success Criteria**
-- All planned features implemented
-- Performance targets achieved
-- Test coverage >90%
-- User satisfaction >4.5/5
 
-### **Phase 3: Scale & Polish (Q3 2025) - PLANNED 📋**
+- 1,700 total activated users achieved
+- 15%+ lease conversion rate
+- In-app messaging adoption >80%
+- Enhanced verification completion >90%
+- NPS score >20
+- Expansion to 5+ NYC universities
+
+### **Phase 3: Market Leadership (Q3 2025) - SCALE**
+
 **Timeline**: July - September 2025  
-**Focus**: Advanced features and production readiness
+**Focus**: Advanced features and market expansion
+**Target**: Break-even, expand beyond NYC
 
 #### **Deliverables**
-- [ ] Advanced functionality
-- [ ] Production deployment
-- [ ] Monitoring and analytics
-- [ ] Performance optimization
-- [ ] Security hardening
+
+- [ ] Secure deposit handling (escrow service)
+- [ ] Advanced roommate group formation
+- [ ] University partnership program
+- [ ] Mobile app development
+- [ ] AI-powered matching optimization
+- [ ] Landlord/property management portal
 
 #### **Success Criteria**
-- Production deployment successful
-- Performance metrics met
-- Security audit passed
-- User adoption targets achieved
+
+- Financial break-even achieved
+- Expansion to 3+ major university cities
+- University partnership agreements signed
+- Mobile app launched
+- Advanced matching accuracy >85%
+- Market leadership in university housing segment
 
 ### **Phase 4: Growth & Innovation (Q4 2025) - FUTURE 🚀**
+
 **Timeline**: October - December 2025  
 **Focus**: Innovation and expansion
 
 #### **Deliverables**
+
 - [ ] New feature development
 - [ ] User feedback integration
 - [ ] Performance improvements
@@ -118,6 +160,7 @@ To deliver a high-quality web application that demonstrates modern development p
 - [ ] Future planning
 
 #### **Success Criteria**
+
 - Innovation goals achieved
 - User satisfaction maintained
 - Performance improvements realized
@@ -127,48 +170,70 @@ To deliver a high-quality web application that demonstrates modern development p
 
 ## 🚀 Features List
 
-### **Core Features (Phase 1) - NOT STARTED 📋**
+### **MVP Core Features (Phase 1) - Student Housing Focus**
 
-#### **1. User Interface Foundation**
-- **Modern Design System**: Professional, clean interface
-- **Responsive Layout**: Mobile-first responsive design
-- **Component Library**: shadcn/ui integration
-- **Theme Support**: Light/dark mode capability
-- **Accessibility**: WCAG 2.1 AA compliance
+#### **1. University-Verified User System**
 
-#### **2. Basic Functionality**
-- **Data Management**: CRUD operations
-- **User Authentication**: Login/logout system
-- **Navigation**: Intuitive navigation structure
-- **Search**: Basic search functionality
-- **Notifications**: Toast notification system
+- **Email Verification**: Mandatory .edu email verification system
+- **Student Profiles**: University, major, academic year display
+- **Trust Badges**: Clear "Verified Student" indicators
+- **Privacy Controls**: Hidden email addresses, secure data handling
+- **Profile Photos**: Student photo upload and display
 
-#### **3. Technical Foundation**
-- **Performance**: Fast loading times
-- **Security**: Basic security measures
-- **Testing**: Unit and integration tests
-- **Documentation**: Comprehensive documentation
-- **Deployment**: CI/CD pipeline setup
+#### **2. Dual Housing Marketplace**
 
-### **Enhanced Features (Phase 2) - PLANNED 📋**
+- **Room Seekers**: Budget, neighborhood, move-in date preferences
+- **Room Offers**: Available rooms with rent, location, descriptions
+- **Role Selection**: Clear "I need/have a room" onboarding flow
+- **Profile Management**: Easy switching between seeker/offer modes
+- **Listing Creation**: Simple form-based listing creation
 
-#### **4. Advanced User Experience**
-- **Advanced Interactions**: Drag & drop, animations
-- **Personalization**: User preferences and settings
-- **Advanced Search**: Filters and sorting
-- **Real-time Updates**: Live data synchronization
-- **Offline Support**: Service worker implementation
+#### **3. Compatibility Matching System**
 
-#### **5. Performance & Quality**
-- **Performance Monitoring**: Metrics and analytics
-- **Error Handling**: Comprehensive error management
-- **Loading States**: Skeleton screens and progress indicators
-- **Caching**: Intelligent data caching
-- **Optimization**: Bundle size and performance optimization
+- **Lifestyle Preferences**: Cleanliness, social habits, noise level
+- **Search Filtering**: Multi-criteria filtering by preferences
+- **Compatibility Indicators**: Visual compatibility scoring
+- **Smart Matching**: Algorithm-based roommate suggestions
+- **Preference Updates**: Easy modification of lifestyle settings
+
+#### **4. Mobile-First Design Foundation**
+
+- **Responsive Layout**: Optimized for student mobile usage
+- **Kommon Branding**: Hearth (#C86A50), Sage (#A3B1A2), Sunlight (#F3DDA4) colors
+- **Typography**: Nunito (headlines), Lora (body text)
+- **Component Library**: shadcn/ui with custom Kommon styling
+- **Accessibility**: WCAG 2.1 AA compliance for international students
+
+### **Enhanced Features (Phase 2) - Community Building**
+
+#### **4. Communication & Trust Building**
+
+- **In-App Messaging**: Secure communication between verified students
+- **Profile Verification**: Enhanced verification with student ID upload
+- **Safety Features**: Report/block functionality for problematic users
+- **Reference System**: Peer references and roommate reviews
+- **Communication Guidelines**: Clear community standards and expectations
+
+#### **5. Advanced Matching & Discovery**
+
+- **Enhanced Profiles**: Major-specific preferences, study habits, dietary needs
+- **Smart Recommendations**: AI-powered compatibility scoring
+- **Interactive Map Search**: Visual neighborhood exploration
+- **Group Formation**: Multi-roommate group creation tools
+- **Saved Searches**: Notification system for new matching profiles
+
+#### **6. International Student Support**
+
+- **Guarantor Service Integration**: Partnership with guarantor services
+- **Documentation Help**: Lease understanding and rental guides
+- **Cultural Integration**: Tips for NYC living and cultural adaptation
+- **Emergency Contacts**: University and community resource integration
+- **Multi-language Support**: Key features in common international student languages
 
 ### **Advanced Features (Phase 3) - PLANNED 📋**
 
 #### **6. Enterprise Features**
+
 - **User Management**: Role-based access control
 - **Audit Logging**: Comprehensive activity tracking
 - **API Management**: Advanced API features
@@ -176,6 +241,7 @@ To deliver a high-quality web application that demonstrates modern development p
 - **Analytics**: Advanced user analytics
 
 #### **7. Security & Compliance**
+
 - **Advanced Security**: Multi-factor authentication
 - **Data Protection**: Encryption and privacy controls
 - **Compliance**: GDPR, SOC2 compliance
@@ -185,6 +251,7 @@ To deliver a high-quality web application that demonstrates modern development p
 ### **Innovation Features (Phase 4) - FUTURE 🚀**
 
 #### **8. AI & Automation**
+
 - **Smart Recommendations**: AI-powered suggestions
 - **Automation**: Workflow automation
 - **Predictive Analytics**: Data-driven insights
@@ -192,6 +259,7 @@ To deliver a high-quality web application that demonstrates modern development p
 - **Machine Learning**: ML-powered features
 
 #### **9. Platform Expansion**
+
 - **Mobile App**: Native mobile applications
 - **Desktop App**: Electron-based desktop app
 - **API Platform**: Public API for developers
@@ -202,57 +270,85 @@ To deliver a high-quality web application that demonstrates modern development p
 
 ## 👥 User Stories
 
-### **User Personas**
+### **Primary User Personas**
 
-#### **Primary User: Internal Team Member**
-- **Role**: Developer, Designer, Product Manager
-- **Goals**: Efficiently use the application for daily tasks
-- **Pain Points**: Complex interfaces, slow performance, poor mobile experience
-- **Technical Level**: Intermediate to Advanced
+#### **Ananya Sharma - The International Graduate Student**
 
-#### **Secondary User: End Customer**
-- **Role**: Business user, Consumer
-- **Goals**: Complete tasks quickly and efficiently
-- **Pain Points**: Learning curve, accessibility issues, inconsistent design
-- **Technical Level**: Beginner to Intermediate
+- **Demographics**: 24, M.S. Computer Science, Columbia University, 1st year
+- **Background**: Just arrived from India, no U.S. credit history
+- **Goals**: Find safe, affordable housing with quiet, studious roommate
+- **Pain Points**: Vulnerable to scams, overwhelmed by NYC rental market, no guarantor
+- **Needs**: Verified, trustworthy platform with clear safety indicators
+
+#### **Ben Carter - The Out-of-State Undergraduate**
+
+- **Demographics**: 20, Film & TV major, NYU, 3rd year (moving off-campus)
+- **Background**: From Florida, lived in dorms for 2 years
+- **Goals**: Find 2-3 roommates to afford NYC rent in vibrant neighborhood
+- **Pain Points**: Financial pressure ($4,200 avg rent), fragmented search process
+- **Needs**: Efficient platform to find multiple compatible roommates
+
+#### **Chloe Davis - The Current NYC Student**
+
+- **Demographics**: 21, Economics major, Fordham University, 4th year
+- **Background**: Queens native, moving off-campus with friend
+- **Goals**: Find trustworthy third roommate for first apartment
+- **Pain Points**: Fear of incompatible strangers, complex lease navigation
+- **Needs**: Reliable roommate vetting and compatibility matching
 
 ### **User Stories by Phase**
 
-#### **Phase 1 User Stories - NOT STARTED 📋**
+#### **Phase 1 User Stories - MVP Core Features**
 
-**US-001: User Authentication**
-- **As a** user
-- **I want to** securely log in and out of the application
-- **So that** my data is protected and I can access my account
-- **Acceptance Criteria**:
-  - User can log in with valid credentials
-  - User can log out securely
-  - Session management works correctly
-  - Error handling for invalid credentials
+**US-001: University Email Verification**
 
-**US-002: Basic Navigation**
-- **As a** user
-- **I want to** navigate between different sections of the application
-- **So that** I can access all available features
+- **As** Ananya (international student)
+- **I want to** sign up using my university email address
+- **So that** I can be certain everyone on the platform is a verified student, making me feel safe from scams
 - **Acceptance Criteria**:
-  - Navigation menu is visible and accessible
-  - All main sections are reachable
-  - Current location is clearly indicated
-  - Mobile navigation works properly
+  - Must use .edu email address to sign up
+  - Verification email sent to university address
+  - Account activated only after email verification
+  - Non-.edu emails rejected with clear error message
+  - Expired verification links can be resent
 
-**US-003: Responsive Design**
-- **As a** user
-- **I want to** use the application on any device
-- **So that** I can work from anywhere
+**US-002: Verified Student Profiles**
+
+- **As** Chloe (looking for roommate)
+- **I want to** view verified student profiles with university info
+- **So that** I have baseline trust before considering someone as a roommate
 - **Acceptance Criteria**:
-  - Application works on desktop, tablet, and mobile
-  - Touch interactions are optimized
-  - Layout adapts to screen size
-  - Performance is consistent across devices
+  - Profile shows "Verified Student" badge
+  - University name, major, and academic year visible
+  - Email address hidden for privacy
+  - Profile photo and basic lifestyle preferences shown
+
+**US-003: Dual Listing System**
+
+- **As** Ben (seeking roommates) or Chloe (has room)
+- **I want to** create either a "seeking" or "offering" profile
+- **So that** I can clearly communicate my housing situation
+- **Acceptance Criteria**:
+  - Clear role selection: "I need a room" vs "I have a room"
+  - Seekers specify budget, preferred neighborhoods, move-in date
+  - Room offers include rent, location, move-in date, description
+  - Both types support lifestyle preference matching
+
+**US-004: Lifestyle Compatibility Matching**
+
+- **As** Ananya (needs quiet environment)
+- **I want to** specify and filter by lifestyle preferences
+- **So that** I can find compatible roommates who match my living style
+- **Acceptance Criteria**:
+  - Profile setup includes cleanliness, social habits, noise level preferences
+  - Search filters allow filtering by lifestyle preferences
+  - Clear display of compatibility indicators in search results
+  - "No results" message when filters are too restrictive
 
 #### **Phase 2 User Stories - PLANNED 📋**
 
 **US-004: Advanced Interactions**
+
 - **As a** user
 - **I want to** interact with data using modern UI patterns
 - **So that** I can work more efficiently
@@ -263,6 +359,7 @@ To deliver a high-quality web application that demonstrates modern development p
   - Touch gestures are supported
 
 **US-005: Real-time Updates**
+
 - **As a** user
 - **I want to** see data updates in real-time
 - **So that** I always have the latest information
@@ -273,6 +370,7 @@ To deliver a high-quality web application that demonstrates modern development p
   - Performance is maintained
 
 **US-006: Personalization**
+
 - **As a** user
 - **I want to** customize the application to my preferences
 - **So that** I can work more efficiently
@@ -285,6 +383,7 @@ To deliver a high-quality web application that demonstrates modern development p
 #### **Phase 3 User Stories - PLANNED 📋**
 
 **US-007: Advanced Security**
+
 - **As a** user
 - **I want to** have confidence in the security of my data
 - **So that** I can trust the application with sensitive information
@@ -295,6 +394,7 @@ To deliver a high-quality web application that demonstrates modern development p
   - Security audits are passed
 
 **US-008: Performance Monitoring**
+
 - **As a** user
 - **I want to** experience consistent performance
 - **So that** I can work efficiently without interruptions
@@ -307,6 +407,7 @@ To deliver a high-quality web application that demonstrates modern development p
 #### **Phase 4 User Stories - FUTURE 🚀**
 
 **US-009: AI-Powered Features**
+
 - **As a** user
 - **I want to** benefit from intelligent automation
 - **So that** I can focus on high-value tasks
@@ -317,6 +418,7 @@ To deliver a high-quality web application that demonstrates modern development p
   - AI features enhance productivity
 
 **US-010: Platform Expansion**
+
 - **As a** user
 - **I want to** access the application from any platform
 - **So that** I can work seamlessly across devices
@@ -331,10 +433,12 @@ To deliver a high-quality web application that demonstrates modern development p
 ## 📝 Change Log
 
 ### **Version 1.0.0** - December 2024
+
 **Status**: 📋 Planned  
-**Release Date**: March 31, 2025  
+**Release Date**: March 31, 2025
 
 #### **🆕 Planned Features**
+
 - Initial application setup and architecture
 - Basic UI components and layout system
 - User authentication foundation
@@ -342,6 +446,7 @@ To deliver a high-quality web application that demonstrates modern development p
 - Core functionality framework
 
 #### **🎨 Planned UI/UX Improvements**
+
 - Modern, professional design system
 - shadcn/ui component library integration
 - Mobile-first responsive design
@@ -349,6 +454,7 @@ To deliver a high-quality web application that demonstrates modern development p
 - Consistent design language
 
 #### **🛠️ Planned Technical Improvements**
+
 - Next.js 14 with App Router architecture
 - TypeScript implementation for type safety
 - Tailwind CSS for styling system
@@ -356,15 +462,18 @@ To deliver a high-quality web application that demonstrates modern development p
 - Basic testing framework setup
 
 #### **📚 Documentation**
+
 - Initial PRD document
 - Development setup guide
 - Basic architecture documentation
 
 ### **Version 1.1.0** - June 2025 (Planned)
+
 **Status**: 📋 Planned  
-**Release Date**: June 30, 2025  
+**Release Date**: June 30, 2025
 
 #### **🆕 Planned Features**
+
 - Enhanced UI components
 - Advanced user interactions
 - Performance optimizations
@@ -372,22 +481,26 @@ To deliver a high-quality web application that demonstrates modern development p
 - Documentation updates
 
 #### **🎨 Planned UI/UX Improvements**
+
 - Advanced animations and transitions
 - Enhanced mobile experience
 - Improved accessibility features
 - User personalization options
 
 #### **🛠️ Planned Technical Improvements**
+
 - Performance monitoring implementation
 - Advanced error handling
 - Caching strategies
 - Security enhancements
 
 ### **Version 1.2.0** - September 2025 (Planned)
+
 **Status**: 📋 Planned  
-**Release Date**: September 30, 2025  
+**Release Date**: September 30, 2025
 
 #### **🆕 Planned Features**
+
 - Enterprise-grade features
 - Advanced security implementation
 - Production deployment
@@ -395,22 +508,26 @@ To deliver a high-quality web application that demonstrates modern development p
 - Performance optimization
 
 #### **🎨 Planned UI/UX Improvements**
+
 - Advanced user interface components
 - Enhanced user experience features
 - Professional-grade design system
 - Accessibility excellence
 
 #### **🛠️ Planned Technical Improvements**
+
 - Production-ready architecture
 - Advanced security measures
 - Comprehensive monitoring
 - Performance excellence
 
 ### **Version 2.0.0** - December 2025 (Planned)
+
 **Status**: 📋 Planned  
-**Release Date**: December 31, 2025  
+**Release Date**: December 31, 2025
 
 #### **🆕 Planned Features**
+
 - Innovation features
 - AI-powered functionality
 - Platform expansion
@@ -418,12 +535,14 @@ To deliver a high-quality web application that demonstrates modern development p
 - Future roadmap implementation
 
 #### **🎨 Planned UI/UX Improvements**
+
 - Next-generation user interface
 - AI-enhanced user experience
 - Advanced personalization
 - Cross-platform consistency
 
 #### **🛠️ Planned Technical Improvements**
+
 - AI/ML integration
 - Advanced automation
 - Platform expansion
@@ -434,21 +553,27 @@ To deliver a high-quality web application that demonstrates modern development p
 ## 🏗️ Technical Architecture
 
 ### **Frontend Architecture**
-- **Framework**: Next.js 14 with App Router
-- **UI Library**: React 18 with TypeScript
-- **Component Library**: shadcn/ui
-- **Styling**: Tailwind CSS
-- **State Management**: React hooks + Context API
-- **Icons**: Lucide React
+
+- **Framework**: Next.js 14 with App Router for modern React development
+- **UI Library**: React 18 with TypeScript for type safety
+- **Component Library**: shadcn/ui with custom Kommon styling
+- **Styling**: Tailwind CSS with Kommon color palette integration
+- **Typography**: Nunito (headlines), Lora (body text) from Kommon identity
+- **Brand Colors**: Hearth (#C86A50), Sage (#A3B1A2), Sunlight (#F3DDA4), Ink (#2E3A4B), Foundation (#F7F5F2)
+- **State Management**: React hooks + Context API for student data
+- **Icons**: Lucide React + custom Kommon Community Threshold symbol
 
 ### **Backend Architecture**
-- **API**: RESTful API with Next.js API routes
-- **Database**: PostgreSQL with Prisma ORM
-- **Authentication**: NextAuth.js
-- **File Storage**: AWS S3 or similar
-- **Caching**: Redis for performance
+
+- **API**: RESTful API with Next.js API routes for student data management
+- **Database**: PostgreSQL with Prisma ORM for secure student information storage
+- **Authentication**: Custom .edu email verification system
+- **Email Service**: Verification system for university email addresses
+- **File Storage**: Secure student photo and document storage
+- **Privacy Controls**: FERPA-compliant data handling for student records
 
 ### **Infrastructure**
+
 - **Hosting**: Vercel or AWS
 - **CDN**: Cloudflare or Vercel Edge
 - **Monitoring**: Vercel Analytics, Sentry
@@ -456,17 +581,21 @@ To deliver a high-quality web application that demonstrates modern development p
 - **Testing**: Jest, React Testing Library
 
 ### **Security Architecture**
-- **Authentication**: JWT tokens with refresh
-- **Authorization**: Role-based access control
-- **Data Protection**: Encryption at rest and in transit
-- **API Security**: Rate limiting, CORS, validation
-- **Compliance**: GDPR, SOC2 readiness
+
+- **Authentication**: University email verification with secure token system
+- **Student Privacy**: FERPA-compliant data handling and storage
+- **Data Protection**: Encryption at rest and in transit for student information
+- **API Security**: Rate limiting, CORS, input validation for student data
+- **Email Privacy**: Hidden email addresses, secure communication channels
+- **Trust Verification**: Robust .edu email verification to prevent fake accounts
+- **Compliance**: FERPA, GDPR readiness for international student data
 
 ---
 
 ## 📊 Performance Requirements
 
 ### **Performance Targets**
+
 - **Page Load Time**: <2 seconds
 - **Time to Interactive**: <3 seconds
 - **Animation Performance**: 60fps consistently
@@ -474,6 +603,7 @@ To deliver a high-quality web application that demonstrates modern development p
 - **API Response Time**: <200ms average
 
 ### **Scalability Requirements**
+
 - **Concurrent Users**: 1000+ simultaneous users
 - **Data Volume**: Handle 1M+ records
 - **API Throughput**: 1000+ requests per minute
@@ -485,6 +615,7 @@ To deliver a high-quality web application that demonstrates modern development p
 ## 🧪 Testing Strategy
 
 ### **Testing Levels**
+
 - **Unit Testing**: Component and function testing
 - **Integration Testing**: API and component integration
 - **End-to-End Testing**: User workflow testing
@@ -492,6 +623,7 @@ To deliver a high-quality web application that demonstrates modern development p
 - **Security Testing**: Vulnerability assessment
 
 ### **Testing Tools**
+
 - **Unit Testing**: Jest, React Testing Library
 - **E2E Testing**: Playwright or Cypress
 - **Performance Testing**: Lighthouse, WebPageTest
@@ -499,6 +631,7 @@ To deliver a high-quality web application that demonstrates modern development p
 - **Accessibility Testing**: axe-core, WAVE
 
 ### **Test Coverage Goals**
+
 - **Unit Tests**: >90% coverage
 - **Integration Tests**: >80% coverage
 - **E2E Tests**: Critical user journeys
@@ -510,6 +643,7 @@ To deliver a high-quality web application that demonstrates modern development p
 ## 🚀 Deployment & DevOps
 
 ### **Deployment Strategy**
+
 - **Environment**: Development, Staging, Production
 - **Deployment**: Automated CI/CD pipeline
 - **Rollback**: Quick rollback capability
@@ -517,6 +651,7 @@ To deliver a high-quality web application that demonstrates modern development p
 - **Alerting**: Proactive issue detection
 
 ### **DevOps Tools**
+
 - **Version Control**: GitHub
 - **CI/CD**: GitHub Actions
 - **Hosting**: Vercel or AWS
@@ -527,32 +662,39 @@ To deliver a high-quality web application that demonstrates modern development p
 
 ## 📈 Success Metrics & KPIs
 
-### **User Experience Metrics**
-- **User Satisfaction**: 4.5+ rating
-- **Task Completion Rate**: >95%
-- **Error Rate**: <1%
-- **Performance Score**: 90+ Lighthouse score
-- **Accessibility Score**: 95+ WCAG compliance
+### **Student Success Metrics**
 
-### **Technical Metrics**
-- **Uptime**: 99.9% availability
-- **Response Time**: <200ms average
-- **Error Rate**: <0.1%
-- **Security Score**: 90+ security rating
-- **Code Quality**: >90% test coverage
+- **User Growth**: 1,700 total activated users by Month 4
+- **Verification Success**: 95%+ university verification completion rate
+- **Housing Success**: 15%+ lease conversion rate (successful rentals)
+- **Time Savings**: 50% reduction in housing search time vs. traditional platforms
+- **Stress Reduction**: 50% reduction in self-reported housing search stress
+- **Net Promoter Score**: >20 (student satisfaction and likelihood to recommend)
 
-### **Business Metrics**
-- **User Adoption**: 100% internal adoption
-- **Feature Usage**: >80% feature utilization
-- **Support Tickets**: <5% user issues
-- **Development Velocity**: Consistent delivery
-- **Cost Efficiency**: Within budget constraints
+### **Marketplace Health Metrics**
+
+- **Supply-Demand Balance**: Maintain ≥1:1 listing-to-seeker ratio
+- **Profile Completion**: >90% complete student profiles
+- **Active Engagement**: >70% monthly active user rate
+- **Match Quality**: >80% satisfaction with compatibility matches
+- **Safety**: Zero verified student fraud incidents
+- **Trust**: >90% of users feel safer than on open platforms
+
+### **Technical Performance Metrics**
+
+- **Mobile Performance**: <2 second load time on student mobile devices
+- **Uptime**: 99.9% availability (critical for housing deadlines)
+- **Verification System**: <1% false positive/negative rate
+- **Search Performance**: <500ms search result response time
+- **Security**: Zero data breaches, FERPA compliance
+- **Accessibility**: 95+ WCAG compliance score for international students
 
 ---
 
 ## 🔮 Future Considerations
 
 ### **Technology Evolution**
+
 - **Framework Updates**: React 19, Next.js 15
 - **AI Integration**: Machine learning capabilities
 - **Mobile Development**: Native mobile applications
@@ -560,6 +702,7 @@ To deliver a high-quality web application that demonstrates modern development p
 - **Performance**: WebAssembly, Edge computing
 
 ### **Feature Expansion**
+
 - **Advanced Analytics**: Business intelligence
 - **Integration Platform**: Third-party services
 - **Automation**: Workflow automation
@@ -567,6 +710,7 @@ To deliver a high-quality web application that demonstrates modern development p
 - **Internationalization**: Multi-language support
 
 ### **Market Trends**
+
 - **User Expectations**: Evolving user experience standards
 - **Competition**: Market analysis and positioning
 - **Regulations**: Compliance and legal requirements
@@ -578,39 +722,61 @@ To deliver a high-quality web application that demonstrates modern development p
 ## 📞 Stakeholder Information
 
 **Product Owner**: Eren Ocal
-**Development Team**: Eren 
-**Design Team**: Eren
-**QA Team**: Eren 
-**Business Stakeholders**: NYC Universities, Landlords, Brokers, Real Estate Companies
-**End Users**: International and Out of State Students
+**Development Team**: Eren Ocal
+**Design Team**: Eren Ocal
+**QA Team**: Eren Ocal
+**Primary Market**: NYC University Students (International & Out-of-State)
+**Business Stakeholders**:
+
+- NYC Universities (Columbia, NYU, Fordham, etc.)
+- Student Housing Services
+- International Student Offices
+- Guarantor Service Providers
+  **End Users**:
+- International Graduate Students (like Ananya)
+- Out-of-State Undergraduates (like Ben)
+- Local Students Seeking Roommates (like Chloe)
+  **Secondary Markets**:
+- University Housing Offices
+- Student Support Services
+- Verified Landlords (future)
 
 ---
 
 ## 📝 Notes & Observations
 
 ### **Key Decisions & Rationale**
-- **Next.js 14**: Chosen for modern React development and excellent developer experience
-- **shadcn/ui**: Selected for enterprise-grade components and design consistency
-- **TypeScript**: Implemented for type safety and better development experience
-- **Tailwind CSS**: Adopted for rapid development and consistent design system
+
+- **University Email Verification**: Core differentiator creating trusted, closed ecosystem for students
+- **Next.js 14**: Chosen for modern React development and excellent performance for student mobile usage
+- **shadcn/ui + Custom Styling**: Selected for professional components with Kommon brand integration
+- **TypeScript**: Implemented for type safety when handling sensitive student data
+- **Tailwind CSS + Kommon Colors**: Adopted for rapid development with consistent brand identity
+- **Mobile-First Design**: Critical for student users who primarily use mobile devices
+- **FERPA Compliance**: Essential for handling university student data securely
 
 ### **Risk Assessment**
-- **Technical Risks**: Framework updates, performance challenges
-- **Business Risks**: User adoption, feature scope creep
-- **Security Risks**: Data breaches, compliance issues
-- **Operational Risks**: Team capacity, timeline delays
+
+- **Student Privacy Risks**: Data breaches, FERPA compliance violations, unauthorized access
+- **Trust & Safety Risks**: Fake accounts bypassing verification, student safety concerns
+- **Market Risks**: Slow university adoption, competition from established platforms
+- **Technical Risks**: Email verification system failures, mobile performance issues
+- **Business Risks**: Low student engagement, insufficient lease conversion rates
 
 ### **Mitigation Strategies**
-- **Technical**: Regular updates, performance monitoring, comprehensive testing
-- **Business**: User feedback loops, scope management, stakeholder communication
-- **Security**: Security audits, compliance monitoring, regular updates
-- **Operational**: Team planning, resource allocation, risk management
+
+- **Student Privacy**: FERPA-compliant architecture, regular security audits, encryption
+- **Trust & Safety**: Robust .edu verification, clear community guidelines, reporting systems
+- **Market**: University partnership strategy, targeted student outreach, competitive differentiation
+- **Technical**: Redundant email systems, mobile-first testing, performance monitoring
+- **Business**: Student feedback loops, university housing office partnerships, iterative improvements
 
 ---
 
 ## ✅ Pre-Development Checklist
 
 ### **Essential Setup (Complete Before Phase 1)**
+
 - [ ] **Project Repository Setup**
   - [x] Create GitHub repository
   - [x] Set up branch protection rules
@@ -641,57 +807,71 @@ To deliver a high-quality web application that demonstrates modern development p
   - [ ] Create development milestones
   - [ ] Set up progress tracking
 
-### **Domain-Specific Planning (Student Housing Focus)**
-- [ ] **User Research & Validation**
-  - [ ] Interview 5-10 international students about housing needs
-  - [ ] Research NYC housing market and regulations
-  - [ ] Understand landlord and broker pain points
-  - [ ] Analyze competitor platforms
+### **Student Housing Specific Planning**
 
-- [ ] **Legal & Compliance**
-  - [ ] Research NYC rental laws and regulations
-  - [ ] Understand international student visa requirements
-  - [ ] Consult with legal advisor on rental agreements
-  - [ ] Plan for data privacy compliance (GDPR, CCPA)
+- [ ] **University Partnership Development**
+  - [ ] Contact housing offices at Columbia, NYU, Fordham
+  - [ ] Develop university partnership proposals
+  - [ ] Plan integration with existing student resources
+  - [ ] Create university-specific verification processes
 
-- [ ] **Business Model Validation**
-  - [ ] Define revenue streams (commission, subscription, etc.)
-  - [ ] Research pricing strategies for NYC market
-  - [ ] Plan for landlord/broker onboarding
-  - [ ] Define student user acquisition strategy
+- [ ] **Student Safety & Trust Framework**
+  - [ ] Develop .edu email verification system architecture
+  - [ ] Create community guidelines and safety policies
+  - [ ] Plan reporting and moderation systems
+  - [ ] Design trust indicators and verification badges
+
+- [ ] **International Student Support Planning**
+  - [ ] Research international student housing challenges
+  - [ ] Plan guarantor service partnerships
+  - [ ] Design cultural adaptation resources
+  - [ ] Create multi-language support strategy
+
+- [ ] **Legal & Compliance for Students**
+  - [ ] Research FERPA requirements for student data
+  - [ ] Plan GDPR compliance for international students
+  - [ ] Understand NYC rental laws affecting students
+  - [ ] Create student-friendly legal resource guides
 
 ---
 
 ## 📋 Next Steps
 
-### **Immediate Actions (This Week)**
-1. Review and approve this PRD document
-2. Complete Pre-Development Checklist
-3. Set up development environment
-4. Begin Phase 1 development
-5. Establish regular review cadence
+### **Immediate Actions (Week 1)**
 
-### **Short Term (Next 2 Weeks)**
-1. Complete Phase 1 planning
-2. Begin feature development
-3. Set up testing framework
-4. Establish monitoring and metrics
+1. Complete university partnership research (Columbia, NYU, Fordham)
+2. Design .edu email verification system architecture
+3. Set up development environment with Kommon branding
+4. Create user research plan for student interviews
+5. Begin MVP wireframing with Kommon design system
 
-### **Medium Term (Next Month)**
-1. Complete Phase 1 development
-2. Begin Phase 2 planning
-3. Implement enhanced features
-4. Prepare for Phase 2 deployment
+### **Short Term (Weeks 2-4)**
 
-### **Long Term (Next Quarter)**
-1. Complete Phase 2 development
-2. Begin Phase 3 planning
-3. Implement advanced features
-4. Plan future roadmap
+1. Implement university email verification system
+2. Build student profile creation flow
+3. Develop dual marketplace (seekers/offers) architecture
+4. Create lifestyle compatibility matching system
+5. Conduct user interviews with 5-10 students
+
+### **Medium Term (Month 2-3)**
+
+1. Complete MVP core features development
+2. Implement mobile-responsive design with Kommon styling
+3. Build search and filtering functionality
+4. Conduct alpha testing with early student users
+5. Refine based on student feedback
+
+### **Long Term (Month 4+)**
+
+1. Launch MVP with first partner university
+2. Achieve 500+ activated users milestone
+3. Begin Phase 2 planning (in-app messaging)
+4. Expand to additional NYC universities
+5. Measure success against 1,700 user target
 
 ---
 
-*Last Updated: December 2024*  
-*Next Review: Weekly*  
-*Document Owner: Product Team*  
-*Version: 1.0.0*
+_Last Updated: Aug 31st 2025_  
+_Next Review: Weekly_  
+_Document Owner: Product Team_  
+_Version: 1.0.0_

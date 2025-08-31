@@ -1,0 +1,33 @@
+{
+  "name": "kommon-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kommon - Student Housing Platform",
+  "scripts": {
+    "dev": "cd webapp && pnpm dev",
+    "build": "cd webapp && pnpm build",
+    "start": "cd webapp && pnpm start",
+    "lint": "cd webapp && pnpm lint",
+    "format": "cd webapp && pnpm format",
+    "type-check": "cd webapp && pnpm type-check",
+    "test": "cd webapp && pnpm test",
+    "prepare": "husky"
+  },
+  "workspaces": [
+    "webapp"
+  ],
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.5"
+  },
+  "lint-staged": {
+    "webapp/**/*.{ts,tsx}": [
+      "cd webapp && pnpm lint --fix",
+      "cd webapp && pnpm format"
+    ],
+    "**/*.{json,md}": [
+      "prettier --write"
+    ]
+  },
+  "packageManager": "pnpm@10.12.4"
+}
