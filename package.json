@@ -11,6 +11,10 @@
     "format": "cd webapp && pnpm format",
     "type-check": "cd webapp && pnpm type-check",
     "test": "cd webapp && pnpm test",
+    "db:push": "cd webapp && pnpm db:push",
+    "db:migrate": "cd webapp && pnpm db:migrate",
+    "db:generate": "cd webapp && pnpm db:generate",
+    "db:studio": "cd webapp && pnpm db:studio",
     "prepare": "husky"
   },
   "workspaces": [

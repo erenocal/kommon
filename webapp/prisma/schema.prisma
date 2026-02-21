@@ -1,0 +1,113 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                   String                @id @default(uuid())
+  email                String                @unique
+  passwordHash         String                @map("password_hash")
+  emailVerified        Boolean               @default(false) @map("email_verified")
+  verificationToken    String?               @map("verification_token")
+  university           String?
+  createdAt            DateTime              @default(now()) @map("created_at")
+  updatedAt            DateTime              @updatedAt @map("updated_at")
+  verificationTokens   VerificationToken[]
+  passwordResetTokens  PasswordResetToken[]
+  sessions             Session[]
+  profile              UserProfile?
+
+  @@map("users")
+}
+
+model UserProfile {
+  id                    String                 @id @default(uuid())
+  userId                String                 @unique @map("user_id")
+  fullName              String                 @map("full_name")
+  university            String
+  major                 String?
+  academicYear          String?                @map("academic_year")
+  bio                   String?
+  profilePhotoUrl       String?                @map("profile_photo_url")
+  userType              String                 @map("user_type") // 'seeker' or 'provider'
+  profileCompleted      Boolean                @default(false) @map("profile_completed")
+  createdAt             DateTime               @default(now()) @map("created_at")
+  updatedAt             DateTime               @updatedAt @map("updated_at")
+  user                  User                   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lifestylePreferences  LifestylePreferences?
+  housingPreferences    HousingPreferences?
+
+  @@map("user_profiles")
+}
+
+model LifestylePreferences {
+  id                String      @id @default(uuid())
+  profileId         String      @unique @map("profile_id")
+  cleanliness       Int         @default(3) // 1-5 scale
+  socialHabits      Int         @default(3) @map("social_habits") // 1-5 scale (1=very introverted, 5=very extroverted)
+  noiseLevel        Int         @default(3) @map("noise_level") // 1-5 scale (1=very quiet, 5=very loud)
+  sleepSchedule     String      @default("moderate") @map("sleep_schedule") // 'early_bird', 'night_owl', 'moderate'
+  guestsFrequency   String      @default("sometimes") @map("guests_frequency") // 'never', 'rarely', 'sometimes', 'often'
+  petsComfortable   Boolean     @default(true) @map("pets_comfortable")
+  smokingComfortable Boolean    @default(false) @map("smoking_comfortable")
+  studyHabits       Json?       @map("study_habits") // { location: 'home'|'library', hours: number, quiet: boolean }
+  lifestyleTags     Json?       @map("lifestyle_tags") // ['fitness', 'cooking', 'gaming', etc.]
+  createdAt         DateTime    @default(now()) @map("created_at")
+  updatedAt         DateTime    @updatedAt @map("updated_at")
+  profile           UserProfile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+
+  @@map("lifestyle_preferences")
+}
+
+model HousingPreferences {
+  id                      String      @id @default(uuid())
+  profileId               String      @unique @map("profile_id")
+  maxBudget               Int         @map("max_budget") // Monthly rent in dollars
+  preferredNeighborhoods  Json        @map("preferred_neighborhoods") // ['Upper West Side', 'East Village', etc.]
+  moveInDate              DateTime?   @map("move_in_date")
+  leaseDuration           String?     @map("lease_duration") // '3_months', '6_months', '12_months', 'flexible'
+  housingType             String      @map("housing_type") // 'private_room', 'shared_room', 'studio', 'apartment'
+  amenitiesRequired       Json?       @map("amenities_required") // ['laundry', 'gym', 'doorman', etc.]
+  createdAt               DateTime    @default(now()) @map("created_at")
+  updatedAt               DateTime    @updatedAt @map("updated_at")
+  profile                 UserProfile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+
+  @@map("housing_preferences")
+}
+
+model VerificationToken {
+  id        String    @id @default(uuid())
+  userId    String    @map("user_id")
+  token     String    @unique
+  expiresAt DateTime  @map("expires_at")
+  usedAt    DateTime? @map("used_at")
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("verification_tokens")
+}
+
+model PasswordResetToken {
+  id        String    @id @default(uuid())
+  userId    String    @map("user_id")
+  token     String    @unique
+  expiresAt DateTime  @map("expires_at")
+  usedAt    DateTime? @map("used_at")
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("password_reset_tokens")
+}
+
+model Session {
+  id        String   @id @default(uuid())
+  userId    String   @map("user_id")
+  token     String   @unique
+  expiresAt DateTime @map("expires_at")
+  createdAt DateTime @default(now()) @map("created_at")
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("sessions")
+}

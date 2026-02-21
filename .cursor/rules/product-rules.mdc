@@ -1,9 +1,6 @@
 ---
-description: This rules will be used to update the document files after each change
-alwaysApply: false
+alwaysApply: true
 ---
-
-
 - **Rule**: Update `KOMMON_PRD.md` Document Metadata
   - **Target**: `KOMMON_PRD.md`
   - **Section**: `## 📋 Document Information`
@@ -79,3 +76,16 @@ alwaysApply: false
   - **Section**: `Repository Settings`
   - **Trigger**: A commit message or Pull Request title explicitly mentions configuring a repository setting.
   - **Action**: Change `[ ]` to `[x]` for the corresponding item.
+
+**Rule**: Follow Git Workflow as Defined in DEV_PROCESS.md
+  - **Target**: All contributors and maintainers
+  - **Section**: `Git Workflow` in `DEV_PROCESS.md`
+  - **Trigger**: Any code contribution, feature development, bug fix, or documentation update
+  - **Action**: 
+    - Adhere to the branching strategy (e.g., use `feature/`, `bugfix/`, `hotfix/`, `chore/` prefixes).
+    - Ensure all commits follow the conventional commit format.
+    - Open Pull Requests against the appropriate base branch (`develop` or `main` as specified).
+    - Require code review and successful CI checks before merging.
+    - Reference relevant issues, user stories, or tasks in commit messages and PR descriptions.
+    - Update documentation and checklists as required by the process.
+

@@ -1,0 +1,26 @@
+---
+inclusion: always
+---
+Frontend:
+  Framework: Next.js 14 (App Router)
+  Language: TypeScript
+  UI Library: React 18
+  Components: shadcn/ui (customized with Kommon brand)
+  Styling: Tailwind CSS + Custom Kommon theme
+  Icons: Lucide React + Custom Community Threshold symbol
+
+Backend:
+  API: Next.js API Routes (integrated)
+  Database: PostgreSQL
+  ORM: Prisma
+  Authentication: Custom .edu email verification
+  Email Service: Resend or SendGrid
+  File Storage: Cloudinary or AWS S3
+
+Development:
+  Package Manager: pnpm
+  Code Quality: ESLint + Prettier
+  Testing: Jest + React Testing Library + Playwright
+  Version Control: Git + GitHub
+  Deployment: Vercel
+  Environment: Docker for local development consistency

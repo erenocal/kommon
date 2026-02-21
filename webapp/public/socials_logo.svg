@@ -1,0 +1,25 @@
+<svg width="600" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(30, 0) scale(1.5)">
+      <path d="M 40 50 L 40 90 L 140 90" stroke="#2E3A4B" stroke-width="2" fill="none"/>
+      <path d="M 20 50 L 41 50" stroke="#2E3A4B" stroke-width="2" fill="none"/>
+
+      <g transform="translate(-25, 30)">
+          <path d="M 70 60 L 90 60 Q 93 58, 90 54 C 85 52, 78 52, 72 57 L 70 58 Z" stroke="#2E3A4B" stroke-width="1" fill="#F3DDA4"/>
+          <path d="M 75 60 L 95 60 Q 98 58, 95 54 C 90 52, 83 52, 77 57 L 75 58 Z" stroke="#2E3A4B" stroke-width="1" fill="#F3DDA4"/>
+      </g>
+      <g transform="translate(5, 29)">
+          <path d="M 70 60 L 90 60 Q 93 58, 90 54 C 85 52, 78 52, 72 57 L 70 58 Z" stroke="#2E3A4B" stroke-width="1" fill="#C86A50"/>
+          <path d="M 75 60 L 95 60 Q 98 58, 95 54 C 90 52, 83 52, 77 57 L 75 58 Z" stroke="#2E3A4B" stroke-width="1" fill="#C86A50"/>
+      </g>
+      <g transform="translate(35, 29)">
+          <path d="M 70 60 L 90 60 Q 93 58, 90 54 C 85 52, 78 52, 72 57 L 70 58 Z" stroke="#2E3A4B" stroke-width="1" fill="#A3B1A2"/>
+          <path d="M 75 60 L 95 60 Q 98 58, 95 54 C 90 52, 83 52, 77 57 L 75 58 Z" stroke="#2E3A4B" stroke-width="1" fill="#A3B1A2"/>
+      </g>
+  </g>
+  <text x="400" y="90" dominant-baseline="middle" text-anchor="middle" font-family="Nunito, sans-serif" font-size="48" fill="#2E3A4B" font-weight="bold">
+    Kommon
+  </text>
+  <text x="400" y="130" dominant-baseline="middle" text-anchor="middle" font-family="Lora, serif" font-size="24" fill="#2E3A4B">
+    Find Your Community.
+  </text>
+</svg>
