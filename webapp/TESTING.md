@@ -62,8 +62,9 @@ webapp/
 │   └── app/
 │       └── api/__tests__/          # API route tests
 └── e2e/                            # End-to-end tests
-    ├── auth.spec.ts
-    └── profile.spec.ts
+    ├── auth.spec.ts                # Authentication flows
+    ├── profile.spec.ts             # Profile management
+    └── listings.spec.ts            # Room listings (Phase 2A)
 ```
 
 ## Writing Tests
@@ -224,6 +225,38 @@ it('should always validate .edu emails', () => {
 - [Playwright Documentation](https://playwright.dev/)
 - [Testing Best Practices](https://kentcdodds.com/blog/common-mistakes-with-react-testing-library)
 
+## Test Coverage by Feature
+
+### Phase 1A - Landing Page
+- ✅ Landing page display
+- ✅ Navigation to signup/login
+
+### Phase 1B - Authentication
+- ✅ Signup validation (.edu requirement)
+- ✅ Login flow
+- ✅ Email verification
+- ✅ Password reset
+- ✅ Logout
+
+### Phase 1C - Profile Creation
+- ✅ Basic info validation
+- ✅ Role selection (seeker/provider)
+- ✅ Lifestyle preferences
+- ✅ Housing preferences
+- ✅ Multi-step navigation
+
+### Phase 2A - Room Listings
+- ✅ Browse listings page
+- ✅ Filter by price range
+- ✅ Filter by neighborhood
+- ✅ Filter by room type
+- ✅ Sort options (newest, price, availability)
+- ✅ Create listing form validation
+- ✅ Listing detail view
+- ✅ Provider information display
+- ✅ Navigation and accessibility
+- ✅ Mobile responsiveness
+
 ---
 
-Last Updated: February 2025
+Last Updated: February 21, 2025

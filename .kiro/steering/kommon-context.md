@@ -10,7 +10,7 @@ inclusion: always
 
 **Key Features**: .edu verification, dual marketplace (need/have room), lifestyle compatibility matching
 
-**Current Phase**: 1C - Profile creation (Phase 1A landing page, Phase 1B authentication complete)
+**Current Phase**: 2A - Room listings (Phase 1A-1C complete: landing, auth, profiles)
 
 **Brand**: Hearth #C86A50, Sage #A3B1A2, Sunlight #F3DDA4, Ink #2E3A4B, Foundation #F7F5F2 | Nunito (headlines), Lora (body)
 

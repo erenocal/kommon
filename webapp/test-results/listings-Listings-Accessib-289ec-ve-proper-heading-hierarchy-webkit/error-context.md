@@ -1,0 +1,81 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic [active]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - navigation [ref=e6]:
+            - button "previous" [disabled] [ref=e7]:
+              - img "previous" [ref=e8]
+            - generic [ref=e10]:
+              - generic [ref=e11]: 1/
+              - text: "1"
+            - button "next" [disabled] [ref=e12]:
+              - img "next" [ref=e13]
+          - img
+        - generic [ref=e15]:
+          - generic [ref=e16]:
+            - img [ref=e17]
+            - generic "Latest available version is detected (16.1.6)." [ref=e19]: Next.js 16.1.6
+            - generic [ref=e20]: Turbopack
+          - img
+      - dialog "Build Error" [ref=e22]:
+        - generic [ref=e25]:
+          - generic [ref=e26]:
+            - generic [ref=e27]:
+              - generic [ref=e29]: Build Error
+              - generic [ref=e30]:
+                - button "Copy Error Info" [ref=e31] [cursor=pointer]:
+                  - img [ref=e32]
+                - button "No related documentation found" [disabled] [ref=e34]:
+                  - img [ref=e35]
+                - button "Attach Node.js inspector" [ref=e37] [cursor=pointer]:
+                  - img [ref=e38]
+            - generic [ref=e50]: Ecmascript file had an error
+          - generic [ref=e52]:
+            - generic [ref=e54]:
+              - img [ref=e56]
+              - generic [ref=e60]: ./webapp/src/app/listings/page.tsx (32:1)
+              - button "Open in editor" [ref=e61] [cursor=pointer]:
+                - img [ref=e63]
+            - generic [ref=e66]:
+              - generic [ref=e67]: Ecmascript file had an error
+              - generic [ref=e68]: 30 |
+              - generic [ref=e69]: "}"
+              - generic [ref=e70]: 31 |
+              - text: ">"
+              - generic [ref=e71]: 32 |
+              - generic [ref=e72]: "'use client'"
+              - text: ;
+              - generic [ref=e73]: "|"
+              - text: ^^^^^^^^^^^^^
+              - generic [ref=e74]: 33 |
+              - generic [ref=e75]: 34 |
+              - text: import
+              - generic [ref=e76]: "{ useState"
+              - text: ","
+              - generic [ref=e77]: useEffect
+              - text: ", Suspense"
+              - generic [ref=e78]: "}"
+              - text: from 'react';
+              - generic [ref=e79]: 35 |
+              - text: import
+              - generic [ref=e80]: "{ useRouter"
+              - text: ","
+              - generic [ref=e81]: "useSearchParams }"
+              - text: from 'next/navigation';
+              - generic [ref=e82]: "The \"use client\" directive must be placed before other expressions. Move it to the top of the file to resolve this issue. Import traces: Client Component Browser: ./webapp/src/app/listings/page.tsx [Client Component Browser] ./webapp/src/app/listings/page.tsx [Server Component] Client Component SSR: ./webapp/src/app/listings/page.tsx [Client Component SSR] ./webapp/src/app/listings/page.tsx [Server Component]"
+        - generic [ref=e83]: "1"
+        - generic [ref=e84]: "2"
+    - generic [ref=e89] [cursor=pointer]:
+      - button "Open Next.js Dev Tools" [ref=e90]:
+        - img [ref=e91]
+      - button "Open issues overlay" [ref=e97]:
+        - generic [ref=e98]:
+          - generic [ref=e99]: "0"
+          - generic [ref=e100]: "1"
+        - generic [ref=e101]: Issue
+  - alert [ref=e102]
+```

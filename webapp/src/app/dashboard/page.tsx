@@ -106,7 +106,11 @@ export default function DashboardPage() {
                 <KommonCardDescription className="mb-4">
                   {profile?.userType === 'seeker' ? 'Browse available rooms' : 'Manage your listings'}
                 </KommonCardDescription>
-                <KommonButton variant="outline" className="w-full">
+                <KommonButton 
+                  variant="outline" 
+                  className="w-full"
+                  onClick={() => router.push('/listings')}
+                >
                   {profile?.userType === 'seeker' ? 'Find Housing' : 'My Listings'}
                 </KommonButton>
               </KommonCardContent>
@@ -132,10 +136,10 @@ export default function DashboardPage() {
 
           <div className="mt-8 p-6 rounded-lg" style={{ backgroundColor: '#1A1F26', borderWidth: '1px', borderColor: '#2D3540' }}>
             <h2 className="text-xl font-bold mb-2" style={{ fontFamily: 'var(--font-nunito)', color: '#E8EAED' }}>
-              Coming Soon
+              Phase 2A Complete
             </h2>
             <p style={{ fontFamily: 'var(--font-lora)', color: '#9BA1A6' }}>
-              Room listings, messaging, and compatibility matching features are under development.
+              Room listings are now available! Browse rooms, create listings, and find your perfect match.
             </p>
           </div>
         </div>
