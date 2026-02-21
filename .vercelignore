@@ -1,0 +1,22 @@
+# Dependencies
+node_modules
+webapp/node_modules
+
+# Testing
+webapp/coverage
+webapp/playwright-report
+webapp/test-results
+
+# Development
+.kiro
+.cursor
+.vscode
+.DS_Store
+
+# Documentation
+*.md
+!webapp/README.md
+
+# External files
+external_api
+product documents
