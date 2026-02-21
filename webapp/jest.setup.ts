@@ -22,5 +22,6 @@ jest.mock('next/navigation', () => ({
 }))
 
 // Mock environment variables
-process.env.DATABASE_URL = 'postgresql://test:test@localhost:5432/test'
-process.env.NODE_ENV = 'test'
+if (!process.env.DATABASE_URL) {
+  process.env.DATABASE_URL = 'postgresql://test:test@localhost:5432/test'
+}

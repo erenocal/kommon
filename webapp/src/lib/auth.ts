@@ -1,5 +1,6 @@
 import bcrypt from 'bcryptjs'
 import { randomBytes } from 'crypto'
+import { NextRequest } from 'next/server'
 
 const SALT_ROUNDS = 12
 
