@@ -1,0 +1,92 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+    - generic [ref=e2]:
+        - banner [ref=e3]:
+            - link [ref=e5] [cursor=pointer]:
+                - /url: /messages
+                - img [ref=e6]
+        - generic [ref=e9]: No messages yet. Start the conversation!
+        - generic [ref=e11]:
+            - textbox "Type a message..." [ref=e12]
+            - button "Send" [disabled] [ref=e13]:
+                - img [ref=e14]
+                - text: Send
+    - generic [active]:
+        - generic [ref=e19]:
+            - generic [ref=e20]:
+                - generic [ref=e21]:
+                    - navigation [ref=e22]:
+                        - button "previous" [disabled] [ref=e23]:
+                            - img "previous" [ref=e24]
+                        - generic [ref=e26]:
+                            - generic [ref=e27]: 1/
+                            - text: '1'
+                        - button "next" [disabled] [ref=e28]:
+                            - img "next" [ref=e29]
+                    - img
+                - generic [ref=e31]:
+                    - generic [ref=e32]:
+                        - img [ref=e33]
+                        - generic "Latest available version is detected (16.1.6)." [ref=e35]: Next.js 16.1.6
+                        - generic [ref=e36]: Turbopack
+                    - img
+            - dialog "Build Error" [ref=e38]:
+                - generic [ref=e41]:
+                    - generic [ref=e42]:
+                        - generic [ref=e43]:
+                            - generic [ref=e45]: Build Error
+                            - generic [ref=e46]:
+                                - button "Copy Error Info" [ref=e47] [cursor=pointer]:
+                                    - img [ref=e48]
+                                - button "No related documentation found" [disabled] [ref=e50]:
+                                    - img [ref=e51]
+                                - button "Attach Node.js inspector" [ref=e53] [cursor=pointer]:
+                                    - img [ref=e54]
+                        - generic [ref=e63]: Ecmascript file had an error
+                    - generic [ref=e65]:
+                        - generic [ref=e67]:
+                            - img [ref=e69]
+                            - generic [ref=e72]: ./webapp/src/app/listings/page.tsx (32:1)
+                            - button "Open in editor" [ref=e73] [cursor=pointer]:
+                                - img [ref=e75]
+                        - generic [ref=e78]:
+                            - generic [ref=e79]: Ecmascript file had an error
+                            - generic [ref=e80]: 30 |
+                            - generic [ref=e81]: '}'
+                            - generic [ref=e82]: 31 |
+                            - text: '>'
+                            - generic [ref=e83]: 32 |
+                            - generic [ref=e84]: "'use client'"
+                            - text: ;
+                            - generic [ref=e85]: '|'
+                            - text: ^^^^^^^^^^^^^
+                            - generic [ref=e86]: 33 |
+                            - generic [ref=e87]: 34 |
+                            - text: import
+                            - generic [ref=e88]: '{ useState'
+                            - text: ','
+                            - generic [ref=e89]: useEffect
+                            - text: ', Suspense'
+                            - generic [ref=e90]: '}'
+                            - text: from 'react';
+                            - generic [ref=e91]: 35 |
+                            - text: import
+                            - generic [ref=e92]: '{ useRouter'
+                            - text: ','
+                            - generic [ref=e93]: 'useSearchParams }'
+                            - text: from 'next/navigation';
+                            - generic [ref=e94]: 'The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue. Import traces: Client Component Browser: ./webapp/src/app/listings/page.tsx [Client Component Browser] ./webapp/src/app/listings/page.tsx [Server Component] Client Component SSR: ./webapp/src/app/listings/page.tsx [Client Component SSR] ./webapp/src/app/listings/page.tsx [Server Component]'
+                - generic [ref=e95]: '1'
+                - generic [ref=e96]: '2'
+        - generic [ref=e101] [cursor=pointer]:
+            - button "Open Next.js Dev Tools" [ref=e102]:
+                - img [ref=e103]
+            - button "Open issues overlay" [ref=e107]:
+                - generic [ref=e108]:
+                    - generic [ref=e109]: '0'
+                    - generic [ref=e110]: '1'
+                - generic [ref=e111]: Issue
+    - alert [ref=e112]
+```

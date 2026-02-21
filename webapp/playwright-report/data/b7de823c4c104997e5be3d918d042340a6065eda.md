@@ -1,0 +1,103 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+    - generic [active]:
+        - generic [ref=e4]:
+            - generic [ref=e5]:
+                - generic [ref=e6]:
+                    - navigation [ref=e7]:
+                        - button "previous" [disabled] [ref=e8]:
+                            - img "previous" [ref=e9]
+                        - generic [ref=e11]:
+                            - generic [ref=e12]: 1/
+                            - text: '1'
+                        - button "next" [disabled] [ref=e13]:
+                            - img "next" [ref=e14]
+                    - img
+                - generic [ref=e16]:
+                    - generic [ref=e17]:
+                        - img [ref=e18]
+                        - generic "Latest available version is detected (16.1.6)." [ref=e20]: Next.js 16.1.6
+                        - generic [ref=e21]: Turbopack
+                    - img
+            - dialog "Build Error" [ref=e23]:
+                - generic [ref=e26]:
+                    - generic [ref=e27]:
+                        - generic [ref=e28]:
+                            - generic [ref=e30]: Build Error
+                            - generic [ref=e31]:
+                                - button "Copy Error Info" [ref=e32] [cursor=pointer]:
+                                    - img [ref=e33]
+                                - button "No related documentation found" [disabled] [ref=e35]:
+                                    - img [ref=e36]
+                                - button "Attach Node.js inspector" [ref=e38] [cursor=pointer]:
+                                    - img [ref=e39]
+                        - generic [ref=e48]: Ecmascript file had an error
+                    - generic [ref=e50]:
+                        - generic [ref=e52]:
+                            - img [ref=e54]
+                            - generic [ref=e57]: ./webapp/src/app/listings/page.tsx (32:1)
+                            - button "Open in editor" [ref=e58] [cursor=pointer]:
+                                - img [ref=e60]
+                        - generic [ref=e63]:
+                            - generic [ref=e64]: Ecmascript file had an error
+                            - generic [ref=e65]: 30 |
+                            - generic [ref=e66]: '}'
+                            - generic [ref=e67]: 31 |
+                            - text: '>'
+                            - generic [ref=e68]: 32 |
+                            - generic [ref=e69]: "'use client'"
+                            - text: ;
+                            - generic [ref=e70]: '|'
+                            - text: ^^^^^^^^^^^^^
+                            - generic [ref=e71]: 33 |
+                            - generic [ref=e72]: 34 |
+                            - text: import
+                            - generic [ref=e73]: '{ useState'
+                            - text: ','
+                            - generic [ref=e74]: useEffect
+                            - text: ', Suspense'
+                            - generic [ref=e75]: '}'
+                            - text: from 'react';
+                            - generic [ref=e76]: 35 |
+                            - text: import
+                            - generic [ref=e77]: '{ useRouter'
+                            - text: ','
+                            - generic [ref=e78]: 'useSearchParams }'
+                            - text: from 'next/navigation';
+                            - generic [ref=e79]: 'The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue. Import traces: Client Component Browser: ./webapp/src/app/listings/page.tsx [Client Component Browser] ./webapp/src/app/listings/page.tsx [Server Component] Client Component SSR: ./webapp/src/app/listings/page.tsx [Client Component SSR] ./webapp/src/app/listings/page.tsx [Server Component]'
+                - generic [ref=e80]: '1'
+                - generic [ref=e81]: '2'
+        - generic [ref=e86] [cursor=pointer]:
+            - button "Open Next.js Dev Tools" [ref=e87]:
+                - img [ref=e88]
+            - button "Open issues overlay" [ref=e92]:
+                - generic [ref=e93]:
+                    - generic [ref=e94]: '0'
+                    - generic [ref=e95]: '1'
+                - generic [ref=e96]: Issue
+    - alert [ref=e97]
+    - generic [ref=e99]:
+        - img "Kommon Community Threshold Logo" [ref=e102]
+        - generic [ref=e114]:
+            - generic [ref=e115]:
+                - generic [ref=e116]: Welcome Back
+                - generic [ref=e117]: Log in to your Kommon account
+            - generic [ref=e119]:
+                - generic [ref=e120]:
+                    - generic [ref=e121]: Email
+                    - textbox "Email" [ref=e122]:
+                        - /placeholder: your.email@university.edu
+                - generic [ref=e123]:
+                    - generic [ref=e124]: Password
+                    - textbox "Password" [ref=e125]:
+                        - /placeholder: Enter your password
+                - link "Forgot password?" [ref=e127] [cursor=pointer]:
+                    - /url: /password-reset
+                - button "Log In" [ref=e128]
+                - paragraph [ref=e129]:
+                    - text: Don't have an account?
+                    - link "Sign up" [ref=e130] [cursor=pointer]:
+                        - /url: /signup
+```

@@ -1,0 +1,119 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+    - generic [ref=e4]:
+        - generic [ref=e5]:
+            - heading "Dashboard" [level=1] [ref=e6]
+            - button "Logout" [ref=e7]:
+                - img
+                - text: Logout
+        - generic [ref=e8]:
+            - generic [ref=e9]:
+                - generic [ref=e11]:
+                    - img [ref=e12]
+                    - generic [ref=e15]: Profile
+                - generic [ref=e16]:
+                    - generic [ref=e17]: View and edit your profile information
+                    - button "View Profile" [ref=e18]
+            - generic [ref=e19]:
+                - generic [ref=e21]:
+                    - img [ref=e22]
+                    - generic [ref=e25]: Housing
+                - generic [ref=e26]:
+                    - generic [ref=e27]: Manage your listings
+                    - button "My Listings" [ref=e28]
+            - generic [ref=e29]:
+                - generic [ref=e31]:
+                    - img [ref=e32]
+                    - generic [ref=e34]: Messages
+                - generic [ref=e35]:
+                    - generic [ref=e36]: Connect with other students
+                    - button "View Messages" [ref=e37]
+            - generic [ref=e38]:
+                - generic [ref=e40]:
+                    - img [ref=e41]
+                    - generic [ref=e44]: Settings
+                - generic [ref=e45]:
+                    - generic [ref=e46]: Manage your account settings
+                    - button "Settings" [ref=e47]
+        - generic [ref=e48]:
+            - heading "Phase 2B Complete" [level=2] [ref=e49]
+            - paragraph [ref=e50]: Messaging system is now live! Connect with other students and discuss housing opportunities.
+    - generic [active]:
+        - generic [ref=e53]:
+            - generic [ref=e54]:
+                - generic [ref=e55]:
+                    - navigation [ref=e56]:
+                        - button "previous" [disabled] [ref=e57]:
+                            - img "previous" [ref=e58]
+                        - generic [ref=e60]:
+                            - generic [ref=e61]: 1/
+                            - text: '1'
+                        - button "next" [disabled] [ref=e62]:
+                            - img "next" [ref=e63]
+                    - img
+                - generic [ref=e65]:
+                    - generic [ref=e66]:
+                        - img [ref=e67]
+                        - generic "Latest available version is detected (16.1.6)." [ref=e69]: Next.js 16.1.6
+                        - generic [ref=e70]: Turbopack
+                    - img
+            - dialog "Build Error" [ref=e72]:
+                - generic [ref=e75]:
+                    - generic [ref=e76]:
+                        - generic [ref=e77]:
+                            - generic [ref=e79]: Build Error
+                            - generic [ref=e80]:
+                                - button "Copy Error Info" [ref=e81] [cursor=pointer]:
+                                    - img [ref=e82]
+                                - button "No related documentation found" [disabled] [ref=e84]:
+                                    - img [ref=e85]
+                                - button "Attach Node.js inspector" [ref=e87] [cursor=pointer]:
+                                    - img [ref=e88]
+                        - generic [ref=e100]: Ecmascript file had an error
+                    - generic [ref=e102]:
+                        - generic [ref=e104]:
+                            - img [ref=e106]
+                            - generic [ref=e110]: ./webapp/src/app/listings/page.tsx (32:1)
+                            - button "Open in editor" [ref=e111] [cursor=pointer]:
+                                - img [ref=e113]
+                        - generic [ref=e116]:
+                            - generic [ref=e117]: Ecmascript file had an error
+                            - generic [ref=e118]: 30 |
+                            - generic [ref=e119]: '}'
+                            - generic [ref=e120]: 31 |
+                            - text: '>'
+                            - generic [ref=e121]: 32 |
+                            - generic [ref=e122]: "'use client'"
+                            - text: ;
+                            - generic [ref=e123]: '|'
+                            - text: ^^^^^^^^^^^^^
+                            - generic [ref=e124]: 33 |
+                            - generic [ref=e125]: 34 |
+                            - text: import
+                            - generic [ref=e126]: '{ useState'
+                            - text: ','
+                            - generic [ref=e127]: useEffect
+                            - text: ', Suspense'
+                            - generic [ref=e128]: '}'
+                            - text: from 'react';
+                            - generic [ref=e129]: 35 |
+                            - text: import
+                            - generic [ref=e130]: '{ useRouter'
+                            - text: ','
+                            - generic [ref=e131]: 'useSearchParams }'
+                            - text: from 'next/navigation';
+                            - generic [ref=e132]: 'The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue. Import traces: Client Component Browser: ./webapp/src/app/listings/page.tsx [Client Component Browser] ./webapp/src/app/listings/page.tsx [Server Component] Client Component SSR: ./webapp/src/app/listings/page.tsx [Client Component SSR] ./webapp/src/app/listings/page.tsx [Server Component]'
+                - generic [ref=e133]: '1'
+                - generic [ref=e134]: '2'
+        - generic [ref=e139] [cursor=pointer]:
+            - button "Open Next.js Dev Tools" [ref=e140]:
+                - img [ref=e141]
+            - button "Open issues overlay" [ref=e147]:
+                - generic [ref=e148]:
+                    - generic [ref=e149]: '0'
+                    - generic [ref=e150]: '1'
+                - generic [ref=e151]: Issue
+    - alert [ref=e152]
+```

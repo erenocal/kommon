@@ -1,55 +1,71 @@
-'use client'
+'use client';
 
-import { useEffect, useState } from 'react'
-import { useRouter } from 'next/navigation'
-import { KommonCard, KommonCardContent, KommonCardHeader, KommonCardTitle, KommonCardDescription } from '@/components/ui/kommon-card'
-import { KommonButton } from '@/components/ui/kommon-button'
-import { User, Home, Settings, LogOut } from 'lucide-react'
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
+import {
+  KommonCard,
+  KommonCardContent,
+  KommonCardHeader,
+  KommonCardTitle,
+  KommonCardDescription,
+} from '@/components/ui/kommon-card';
+import { KommonButton } from '@/components/ui/kommon-button';
+import { User, Home, Settings, LogOut, MessageCircle } from 'lucide-react';
 
 export default function DashboardPage() {
-  const router = useRouter()
-  const [profile, setProfile] = useState<{ fullName: string; university: string; major?: string; userType: string } | null>(null)
-  const [loading, setLoading] = useState(true)
+  const router = useRouter();
+  const [profile, setProfile] = useState<{
+    fullName: string;
+    university: string;
+    major?: string;
+    userType: string;
+  } | null>(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const loadProfile = async () => {
       try {
-        const response = await fetch('/api/profile/basic-info')
+        const response = await fetch('/api/profile/basic-info');
         if (response.ok) {
-          const data = await response.json()
+          const data = await response.json();
           if (!data.profile || !data.profile.profileCompleted) {
-            router.push('/profile/create')
-            return
+            router.push('/profile/create');
+            return;
           }
-          setProfile(data.profile)
+          setProfile(data.profile);
         } else {
-          router.push('/login')
+          router.push('/login');
         }
       } catch (err) {
-        console.error('Failed to load profile:', err)
-        router.push('/login')
+        console.error('Failed to load profile:', err);
+        router.push('/login');
       } finally {
-        setLoading(false)
+        setLoading(false);
       }
-    }
-    loadProfile()
-  }, [router])
+    };
+    loadProfile();
+  }, [router]);
 
   const handleLogout = async () => {
     try {
-      await fetch('/api/auth/logout', { method: 'POST' })
-      router.push('/')
+      await fetch('/api/auth/logout', { method: 'POST' });
+      router.push('/');
     } catch (err) {
-      console.error('Logout failed:', err)
+      console.error('Logout failed:', err);
     }
-  }
+  };
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center" style={{ backgroundColor: '#0F1419' }}>
-        <p style={{ fontFamily: 'var(--font-lora)', color: '#9BA1A6' }}>Loading...</p>
+      <div
+        className="min-h-screen flex items-center justify-center"
+        style={{ backgroundColor: '#0F1419' }}
+      >
+        <p style={{ fontFamily: 'var(--font-lora)', color: '#9BA1A6' }}>
+          Loading...
+        </p>
       </div>
-    )
+    );
   }
 
   return (
@@ -57,7 +73,10 @@ export default function DashboardPage() {
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           <div className="flex justify-between items-center mb-8">
-            <h1 className="text-4xl font-bold" style={{ fontFamily: 'var(--font-nunito)', color: '#E8EAED' }}>
+            <h1
+              className="text-4xl font-bold"
+              style={{ fontFamily: 'var(--font-nunito)', color: '#E8EAED' }}
+            >
               Dashboard
             </h1>
             <KommonButton onClick={handleLogout} variant="outline">
@@ -68,10 +87,16 @@ export default function DashboardPage() {
 
           {profile && (
             <div className="mb-8">
-              <p className="text-xl mb-2" style={{ fontFamily: 'var(--font-lora)', color: '#E8EAED' }}>
+              <p
+                className="text-xl mb-2"
+                style={{ fontFamily: 'var(--font-lora)', color: '#E8EAED' }}
+              >
                 Welcome back, {profile.fullName}!
               </p>
-              <p className="text-sm" style={{ fontFamily: 'var(--font-lora)', color: '#9BA1A6' }}>
+              <p
+                className="text-sm"
+                style={{ fontFamily: 'var(--font-lora)', color: '#9BA1A6' }}
+              >
                 {profile.university} {profile.major && `• ${profile.major}`}
               </p>
             </div>
@@ -89,7 +114,11 @@ export default function DashboardPage() {
                 <KommonCardDescription className="mb-4">
                   View and edit your profile information
                 </KommonCardDescription>
-                <KommonButton variant="outline" className="w-full" onClick={() => router.push('/profile/view')}>
+                <KommonButton
+                  variant="outline"
+                  className="w-full"
+                  onClick={() => router.push('/profile/view')}
+                >
                   View Profile
                 </KommonButton>
               </KommonCardContent>
@@ -104,14 +133,42 @@ export default function DashboardPage() {
               </KommonCardHeader>
               <KommonCardContent>
                 <KommonCardDescription className="mb-4">
-                  {profile?.userType === 'seeker' ? 'Browse available rooms' : 'Manage your listings'}
+                  {profile?.userType === 'seeker'
+                    ? 'Browse available rooms'
+                    : 'Manage your listings'}
                 </KommonCardDescription>
-                <KommonButton 
-                  variant="outline" 
+                <KommonButton
+                  variant="outline"
                   className="w-full"
                   onClick={() => router.push('/listings')}
                 >
-                  {profile?.userType === 'seeker' ? 'Find Housing' : 'My Listings'}
+                  {profile?.userType === 'seeker'
+                    ? 'Find Housing'
+                    : 'My Listings'}
+                </KommonButton>
+              </KommonCardContent>
+            </KommonCard>
+
+            <KommonCard>
+              <KommonCardHeader>
+                <div className="flex items-center gap-3">
+                  <MessageCircle
+                    className="w-6 h-6"
+                    style={{ color: '#C86A50' }}
+                  />
+                  <KommonCardTitle>Messages</KommonCardTitle>
+                </div>
+              </KommonCardHeader>
+              <KommonCardContent>
+                <KommonCardDescription className="mb-4">
+                  Connect with other students
+                </KommonCardDescription>
+                <KommonButton
+                  variant="outline"
+                  className="w-full"
+                  onClick={() => router.push('/messages')}
+                >
+                  View Messages
                 </KommonButton>
               </KommonCardContent>
             </KommonCard>
@@ -134,16 +191,27 @@ export default function DashboardPage() {
             </KommonCard>
           </div>
 
-          <div className="mt-8 p-6 rounded-lg" style={{ backgroundColor: '#1A1F26', borderWidth: '1px', borderColor: '#2D3540' }}>
-            <h2 className="text-xl font-bold mb-2" style={{ fontFamily: 'var(--font-nunito)', color: '#E8EAED' }}>
-              Phase 2A Complete
+          <div
+            className="mt-8 p-6 rounded-lg"
+            style={{
+              backgroundColor: '#1A1F26',
+              borderWidth: '1px',
+              borderColor: '#2D3540',
+            }}
+          >
+            <h2
+              className="text-xl font-bold mb-2"
+              style={{ fontFamily: 'var(--font-nunito)', color: '#E8EAED' }}
+            >
+              Phase 2B Complete
             </h2>
             <p style={{ fontFamily: 'var(--font-lora)', color: '#9BA1A6' }}>
-              Room listings are now available! Browse rooms, create listings, and find your perfect match.
+              Messaging system is now live! Connect with other students and
+              discuss housing opportunities.
             </p>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
